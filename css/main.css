@@ -1,0 +1,383 @@
+/*
+*	main css file
+*	written by Ricardo Castillo
+*	produced for Rene de la Cruz
+*	----------------------------
+*/
+
+h1 {
+	color: #ffffff;
+	font-size: 300%;
+	font-family: 'Nunito', sans-serif;
+}
+h2, h3, h4, h5, h6 {
+	color: #ffffff;
+	font-family: 'Nunito', sans-serif;
+}
+p {
+	color: #ffffff;
+	font-size: 20px;
+}
+header {
+  padding: 150px 0 100px;
+  background:
+  	linear-gradient(rgba(0, 128, 128, 0.1), rgba(0, 128, 128, 1)),
+  	url("../img/header-bg.jpg");
+}
+section {
+  padding: 50px 0;
+  border-top: 2px solid #00c589;
+}
+footer {
+	border-top: 2px solid #00c589;	
+}
+.bg1 {
+	background:
+  	linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1)),
+  	url("../img/bg-house.jpeg");
+  	background-position: center;
+}
+.bg2 {
+	background-image: url('../img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg3 {
+	background-image: url('../img/bg3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.blog-header {
+	background-image: url('../img/header1-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;	
+}
+.blog-text {
+	color: #000000;
+	text-align: left;
+	font-size: 100%;
+}
+.element-to-hide{
+    opacity: 0;
+    transition: 0.5s;
+}
+a:hover .element-to-hide {
+	opacity: 1;
+
+}
+.number-link {
+	transition: 0.5s;
+}
+.number-link:hover {
+	transform: scale(1.05);
+}
+.logo-set {
+	width: 80%;
+}
+.navbar-set {
+	background-color: #008080;
+	border-bottom: 2px solid #00c589;
+}
+.nav-item-trans {
+	transition: .5s;
+}
+.quote-button {
+	margin: 30px 0px 0px 60px;
+	border: 1px solid #00c589;
+	color: #ffffff;
+	padding: 5px 30px 10px 30px;
+	font-size: 30px;
+	font-weight: 500;
+	background-color: transparent;
+	transition: 0.5s ease-in-out;
+}
+.blog-button {
+	margin: 0 0 0 40%;
+	border: 1px solid #00c589;
+	color: #000000;
+	padding: 5px 30px 10px 30px;
+	font-size: 30px;
+	font-weight: 500;
+	background-color: transparent;
+	transition: 0.5s ease-in-out;
+}
+.blog-button:hover {
+	border: none;
+	background-color: #00c589;
+	color: #ffffff;
+	transform: scale(1.1);
+}
+.customer-quote {
+	display: table-cell;
+	height: 300px;
+	background-image: url("../img/quote-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	padding: 10px 50px 10px 50px;
+	color: #ffffff;
+	vertical-align: middle;
+	box-shadow: 10px 10px 0px black;
+}
+.quote-button:hover {
+	border: none;
+	background-color: #00c589;
+	color: #ffffff;
+	transform: scale(1.1);
+}
+.background-image {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+.about-pic {
+	border-radius: 2%;
+	border: 2px solid #00c589;
+	box-shadow: 10px 10px 10px grey;
+	margin-left: 20px;
+	width: 80%;
+	height: 80%;
+	display: block;
+	margin: 0 auto;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+.about-pic:hover {
+	transform: scale(1.05);
+	box-shadow: 5px 5px 5px grey;
+}
+/* Animations */
+.fade-in-down-static {
+	padding-top: 20px;
+}
+.fade-in-down {
+  animation: fadeInDown ease-in-out 1s;
+  -webkit-animation: fadeInDown ease-in-out 1s;
+  -moz-animation: fadeInDown ease-in-out 1s;
+  -o-animation: fadeInDown ease-in-out 1s;
+  -ms-animation: fadeInDown ease-in-out 1s;
+}
+@keyframes fadeInDown{
+  0% {
+  	padding-top: 0px;
+  	padding-bottom: 20px;
+    opacity:0;
+  }
+  100% {
+  	padding-top: 20px;
+  	padding-bottom: 0px;
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeInDown {
+  0% {
+  	padding-top: 0px;
+  	padding-bottom: 20px;
+    opacity:0;
+  }
+  100% {
+  	padding-top: 20px;
+  	padding-bottom: 0px;
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+  	padding-top: 0px;
+  	padding-bottom: 20px;
+    opacity:0;
+  }
+  100% {
+  	padding-top: 20px;
+  	padding-bottom: 0px;
+    opacity:1;
+  }
+}
+@-o-keyframes fadeInDown {
+  0% {
+  	padding-top: 0px;
+  	padding-bottom: 20px;
+    opacity:0;
+  }
+  100% {
+  	padding-top: 20px;
+    opacity:1;
+  }
+}
+.fade-in-up {
+  animation: fadeInUp ease-in-out 1s;
+  -webkit-animation: fadeInUp ease-in-out 1s;
+  -moz-animation: fadeInUp ease-in-out 1s;
+  -o-animation: fadeInUp ease-in-out 1s;
+  -ms-animation: fadeInUp ease-in-out 1s;
+}
+.fade-in-up-static {
+	padding-bottom: 20px;
+}
+@keyframes fadeInUp{
+  0% {
+  	padding-bottom: 0px;
+  	padding-top: 20px;
+    opacity:0;
+  }
+  100% {
+  	padding-bottom: 20px;
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeInUp {
+  0% {
+  	padding-bottom: 0px;
+  	padding-top: 20px;
+    opacity:0;
+  }
+  100% {
+  	padding-bottom: 20px;
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  0% {
+  	padding-bottom: 0px;
+  	padding-top: 20px;
+    opacity:0;
+  }
+  100% {
+  	padding-bottom: 20px;
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeInUp {
+  0% {
+  	padding-bottom: 0px;
+  	padding-top: 20px;
+    opacity:0;
+  }
+  100% {
+  	padding-bottom: 20px;
+    opacity:1;
+  }
+}
+.pulse-button {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	display: block;
+	margin-top: 10%;
+	width: 100px;
+	height: 100px;
+	font-size: 1.3em;
+	font-weight: light;
+	font-family: 'Trebuchet MS', sans-serif;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 100px;
+	letter-spacing: -1px;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	background: #00c589;
+	cursor: pointer;
+	box-shadow: 0 0 0 0 rgba(0, 128, 128, .5);
+	animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+	0% {
+  	transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 80px rgba(0, 128, 128, 0);
+  }
+    100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(0, 128, 128, 0);
+  }
+}
+@-moz-keyframes pulse {
+  0% {
+  	transform(scale(.9));
+  }
+  70% {
+    transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+@-o-keyframes pulse {
+  0% {
+  	transform(scale(.9));
+  }
+  70% {
+    transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+@-webkit-keyframes pulse {
+  0% {
+  	transform(scale(.9));
+  }
+  70% {
+    transform(scale(1));
+    box-shadow: 0 0 0 50px rgba(#5a99d4, 0);
+  }
+    100% {
+    transform(scale(.9));
+    box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
+  }
+}
+.fade-in {
+  animation: fadeIn ease-in-out 2s;
+  -webkit-animation: fadeIn ease-in-out 2s;
+  -moz-animation: fadeIn ease-in-out 2s;
+  -o-animation: fadeIn ease-in-out 2s;
+  -ms-animation: fadeIn ease-in-out 2s;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0.6;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0.5;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0.5;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0.5;
+  }
+  100% {
+    opacity:1;
+  }
+}
