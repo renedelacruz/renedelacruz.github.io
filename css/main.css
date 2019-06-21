@@ -4,21 +4,39 @@
 *	produced for Rene de la Cruz
 *	----------------------------
 */
-
+@media (min-width: 1030px){
+  .quote-button{
+    padding-top: 100px;
+  }
+  .header-font {
+    font-size:40px;
+  }
+  h2, h3, h4, h5, h6 {
+    font-size: 200%;
+  }
+  p {
+    font-size: 20px;
+  }
+  .rene-quote {
+    margin-left:-50px;
+  }
+}
 h1 {
 	color: #ffffff;
-	font-size: 300%;
+	font-size: 30px;
 	font-family: 'Nunito', sans-serif;
 }
 h2, h3, h4, h5, h6 {
+  font-size: 150%;
 	color: #ffffff;
 	font-family: 'Nunito', sans-serif;
 }
 p {
 	color: #ffffff;
-	font-size: 20px;
+	font-size: 15px;
 }
 header {
+  font-size:60%;
   padding: 150px 0 100px;
   background:
   	linear-gradient(rgba(0, 128, 128, 0.1), rgba(0, 128, 128, 1)),
@@ -61,6 +79,12 @@ footer {
     -o-transform: scale(1.1);
     transform: scale(1.1);
 }
+.aboutrene-list {
+  font-size:20px;
+  list-style-image: url(../img/list-style.png);
+  text-decoration: none;
+  color:#000000;
+}
 .blog-text {
 	color: #000000;
 	text-align: left;
@@ -69,6 +93,10 @@ footer {
 .element-to-hide{
     opacity: 0;
     transition: 0.5s;
+}
+.footer-links a {
+  color: grey;
+  font-size: 80%;
 }
 a:hover .element-to-hide {
 	opacity: 1;
@@ -91,7 +119,7 @@ a:hover .element-to-hide {
 	transition: .5s;
 }
 .quote-button {
-	margin: 30px 0px 0px 60px;
+	margin: 0;
 	border: 1px solid #00c589;
 	color: #ffffff;
 	padding: 5px 30px 10px 30px;
@@ -111,7 +139,7 @@ a:hover .element-to-hide {
 	transition: 0.5s ease-in-out;
 }
 .blog-button:hover {
-	border: none;
+	border: 1px solid white;
 	background-color: #00c589;
 	color: #ffffff;
 	transform: scale(1.1);
@@ -128,7 +156,7 @@ a:hover .element-to-hide {
 	box-shadow: 10px 10px 0px black;
 }
 .quote-button:hover {
-	border: none;
+	border: 1px solid white;
 	background-color: #00c589;
 	color: #ffffff;
 	transform: scale(1.1);
@@ -138,13 +166,18 @@ a:hover .element-to-hide {
     background-attachment: fixed;
     background-size: cover;
  }
+ .rene-quote {
+  color:#cccccc;
+  margin-left:0px;
+  margin-top:20px;
+ }
 .about-pic {
 	border-radius: 2%;
 	border: 2px solid #00c589;
 	box-shadow: 10px 10px 10px grey;
 	margin-left: 20px;
-	width: 80%;
-	height: 80%;
+  width: 220px;
+  height: 300px;
 	display: block;
 	margin: 0 auto;
 	-webkit-transition: all .3s ease-in-out;
@@ -275,8 +308,6 @@ a:hover .element-to-hide {
 }
 .pulse-button {
 	position: relative;
-	top: 50%;
-	left: 50%;
 	display: block;
 	margin-top: 10%;
 	width: 100px;
