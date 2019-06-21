@@ -5,13 +5,13 @@ function update(){
     $('.bg1').each(function() { 
         var $element = $(this);
         // subtract some from the height b/c of the padding
-        var height = $element.height()-1400;
+        var height = $element.height()-1350;
         $(this).css('backgroundPosition', "50% " + (Math.round((height - pos) * velocity) + 'px'));
     });
     $('.bg2').each(function() { 
         var $element = $(this);
         // subtract some from the height b/c of the padding
-        var height = $element.height()-1000;
+        var height = $element.height()-1250;
         $(this).css('backgroundPosition', "50% " + (Math.round((height - pos) * velocity) + 'px'));
     }); 
 };
